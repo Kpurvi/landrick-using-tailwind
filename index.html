@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./global.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="font-nunito w-full flex flex-col items-center justify-center relative"
+  >
+    <div
+      class="fixed z-40 bottom-6 right-6 p-2 bg-blue-400 h-10 w-10 cursor-pointer transition-all transform group hover:rotate-45"
+    ></div>
+
+    <div class="relative">
+      <div class="fixed z-10 bottom-8 right-9 z-50">
+        <i class="fas fa-arrow-up text-white text-md"></i>
+      </div>
+    </div>
+
+    <div class="relative hidden md:block">
+      <div
+        class="fixed left-0 top-44 h-12 w-12 bg-gray-300 rounded-r-full flex items-center justify-center z-50"
+      >
+        <i
+          class="fa-solid fa-cog text-blue-500 animate-spin text-xl cursor-pointer"
+        ></i>
+      </div>
+    </div>
+
+    <div class="border w-full flex flex-col justify-center items-center">
+      <div class="w-full md:w-[80%]">
+        <!-- Navbar starts -->
+        <nav class="bg-white lg sticky fixed z-50 top-0 md:z-50">
+          <div class="container mx-auto px-4 h-20">
+            <div class="flex justify-between items-center py-4">
+              <div class="flex-shrink-0">
+                <a href="/">
+                  <img src="./Assets/logo.png" alt="Logo" class="w-18 h-6" />
+                </a>
+              </div>
+
+              <div class="hidden md:block">
+                <ul class="flex space-x-8">
+                  <li>
+                    <a
+                      href="#home"
+                      class="text-blue-700 text-sm font-nunito font-bold pr-5"
+                      >HOME</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#landing"
+                      class="text-gray-600 hover:text-blue-700 text-sm font-bold"
+                      >LANDING<i
+                        class="fa-solid fa-chevron-down pl-1 text-xs"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="#pages"
+                      class="text-gray-600 hover:text-blue-700 text-sm font-bold"
+                      >PAGES<i class="fa-solid fa-chevron-down pl-1 text-xs"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="#demos"
+                      class="text-gray-600 hover:text-blue-700 text-sm font-bold"
+                      >DEMOS<i class="fa-solid fa-chevron-down pl-1 text-xs"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="#components"
+                      class="text-gray-600 hover:text-blue-700 text-sm font-bold"
+                      >COMPONENTS<i
+                        class="fa-solid fa-chevron-down pl-1 text-xs"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="#docs"
+                      class="text-gray-600 hover:text-blue-700 text-sm font-bold"
+                      >DOCS<i class="fa-solid fa-chevron-down pl-1 text-xs"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex">
+                <div class="flex mx4 space-x-2">
+                  <div
+                    class="rounded-full bg-gray-100 text-blue-700 flex items-center justify-center w-9 h-9 hover:bg-blue-800 hover:text-white"
+                  >
+                    <i class="fa-solid fa-gear colo"></i>
+                  </div>
+                  <div
+                    class="rounded-full bg-blue-700 text-white flex items-center justify-center w-9 h-9 hover:bg-blue-800"
+                  >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Navbar ends -->
+
+        <!-- Section 1 -->
+        <section class="md:h-[600px] md:my-10">
+          <div
+            class="flex flex-col justify-between items-center mt-20 pt-12 max-h-full md:flex-row"
+          >
+            <div class="h-auto md:w-1/2 space-y-8">
+              <h1 class="md:text-5xl text-4xl text-black font-semibold">
+                Our Creativity Is Your
+                <span
+                  class="block lg-inline py-3"
+                  style="color: rgb(47, 85, 212)"
+                  >Success</span
+                >
+              </h1>
+              <p class="w-66 leading-7 text-[#8492A6] md:text-lg text-lg pr-2">
+                Launch your campaign and benefit from our expertise on designing
+                and managing conversion centered bootstrap v5 html page.
+              </p>
+              <div class="flex flex-col md:flex-row space-x-2">
+                <button
+                  class="border border-blue-600 rounded-md p-2 text-md bg-blue-700 text-white w-40"
+                >
+                  <i class="fa-regular fa-envelope"></i> Get Started
+                </button>
+                <button
+                  class="border border-blue-600 rounded-md text-md text-blue-800 hover:bg-blue-700 hover:text-white w-40"
+                >
+                  <i class="fa-regular fa-file"></i> Documentation
+                </button>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2">
+              <img src="Assets/img.svg" alt="" class="max-w-md md:ml-12" />
+            </div>
+          </div>
+        </section>
+        <!-- Section 1 end -->
+
+        <!-- Section 2 start -->
+        <section class="md:w-[80%]">
+          <div
+            class="grid grid-cols-2 md:grid-cols-6 gap-x-4 md:gap-x-2 md:py-12 md:py-8 border-t border-b border-gray-300 md:mt-20"
+          >
+            <div class="mx-auto">
+              <img src="Assets/amazon.svg" alt="" class="w-20 h-auto py-4" />
+            </div>
+            <div class="mx-auto">
+              <img src="Assets/google.svg" alt="" class="w-20 h-auto py-4" />
+            </div>
+            <div class="mx-auto">
+              <img src="Assets/lenovo.svg" alt="" class="w-20 h-auto py-4" />
+            </div>
+            <div class="mx-auto">
+              <img src="Assets/paypal.svg" alt="" class="w-20 h-auto py-4" />
+            </div>
+            <div class="mx-auto">
+              <img src="Assets/shopify.svg" alt="" class="w-20 h-auto py-4" />
+            </div>
+            <div class="mx-auto">
+              <img src="Assets/spotify.svg" alt="" class="w-20 h-auto py-4" />
+            </div>
+          </div>
+        </section>
+        <!-- Section 2 end -->
+
+        <!-- Section 3 start -->
+        <section class="bg-[#f8f9fa] py-20 w-full">
+          <div class="flex flex-col md:flex-row justify-center">
+            <div class="text-center md:text-center md:w-1/2">
+              <h1 class="text-3xl md:text-3xl font-semibold text-gray-800 pb-8">
+                How It Works?
+              </h1>
+              <p class="text-md md:text-center text-[#8492A6]">
+                Start working with
+                <span class="text-blue-500">Landrick</span> that can provide
+                everything you need to generate awareness, drive traffic,
+                connect.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col md:flex-row items-center justify-center mt-12 md:mt-20"
+          >
+            <div class="md:w-1/2 flex justify-center md:justify-center">
+              <img
+                src="Assets/img2.svg"
+                alt=""
+                class="max-w-md flex justify-center w-full"
+              />
+            </div>
+            <div class="text-center md:text-left md:w-1/2 space-y-6">
+              <h4 class="text-2xl md:text-3xl text-gray-800 font-semibold">
+                Change the way you build websites
+              </h4>
+              <p class="text-md text-[#8492A6]">
+                You can combine all the Landrick templates into a single one,
+                you can take a component from the Application theme and use it
+                in the Website.
+              </p>
+              <div class="lower-text leading-8 text-[#8492A6]">
+                <p>
+                  <i class="fa-regular fa-circle-check text-blue-700 pr-2"></i
+                  >Digital Marketing Solutions for Tomorrow
+                </p>
+                <p>
+                  <i class="fa-regular fa-circle-check text-blue-700 pr-2"></i
+                  >Our Talented & Experienced Marketing Agency
+                </p>
+                <p>
+                  <i class="fa-regular fa-circle-check text-blue-700 pr-2"></i
+                  >Create your own skin to match your brand
+                </p>
+              </div>
+              <div class="">
+                <span class="text-blue-700 text-md font-semibold"
+                  >Find Out More
+                  <i class="fas fa-chevron-right mr-2 text-xs"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Section 3 end -->
+
+        <!-- Section 4 start -->
+
+        <section
+          class="flex flex-col-reverse md:flex-row pb-4 md:pb-0 border-b border-gray-300 bg-[#f8f9fa] md:pb-20 w-full"
+        >
+          <div
+            class="flex flex-col w-full justify-center md:m-8 md:m-1 md:p-0 md:w-3/5 space-y-4"
+          >
+            <h3
+              class="text-3xl md:text-3xl font-semibold text-gray-900 md:py-8 md:leading-normal md:max-w-[60%]"
+            >
+              Speed up your development with
+              <span class="text-blue-700">Landrick.</span>
+            </h3>
+            <p
+              class="text-md text-[#8492A6] md:pb-0 md:leading-6 md:max-w-[90%]"
+            >
+              Using Landrick to build your site means never worrying about
+              designing another page or cross-browser compatibility. Our
+              ever-growing library of components and pre-designed layouts will
+              make your life easier.
+            </p>
+            <div class="lower-text pb-4 md:py-4 md:leading-8 text-[#8492A6]">
+              <p>
+                <i class="fa-regular fa-circle-check text-blue-700 pr-2"></i
+                >Digital Marketing Solutions for Tomorrow
+              </p>
+              <p>
+                <i class="fa-regular fa-circle-check text-blue-700 pr-2"></i>Our
+                Talented & Experienced Marketing Agency
+              </p>
+              <p>
+                <i class="fa-regular fa-circle-check text-blue-700 pr-2"></i
+                >Create your own skin to match your brand
+              </p>
+            </div>
+            <div class="">
+              <span class="text-blue-700 text-md"
+                >Find Out More<i class="fas fa-chevron-right ml-2 text-xs"></i
+              ></span>
+            </div>
+          </div>
+          <div
+            class="flex-1 flex flex-col justify-center w-full md:w-1/2 md:m-auto md:m-8 border bg-white md:p-8 rounded-lg space-y-5"
+          >
+            <img src="Assets/mobile.svg" alt="" class="w-full md:pb-4" />
+            <div class="space-y-2">
+              <label for="name" class="text-md"
+                >Name:<span class="text-red-500">*</span></label
+              >
+              <div class="relative">
+                <i
+                  class="fa-regular fa-user absolute top-3 left-3 text-gray-500"
+                ></i>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder=" Name"
+                  class="w-full h-12 pl-8 border border-gray-300 rounded md:h-10"
+                />
+              </div>
+            </div>
+            <div class="space-y-2">
+              <label for="email" class="text-md"
+                >Email:<span class="text-red-500">*</span></label
+              >
+              <div class="relative">
+                <i
+                  class="fa-regular fa-envelope absolute top-3 left-3 text-gray-500"
+                ></i>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder=" Email"
+                  class="w-full h-12 pl-8 border border-gray-300 rounded md:h-10"
+                />
+              </div>
+            </div>
+            <div class="space-y-2">
+              <label for="password" class="text-md"
+                >Password:<span class="text-red-500">*</span></label
+              >
+              <div class="relative">
+                <i
+                  class="fa-solid fa-lock absolute top-3 left-3 text-gray-500"
+                ></i>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder=" Password"
+                  class="w-full h-12 pl-8 border border-gray-300 rounded md:h-10"
+                />
+              </div>
+            </div>
+            <div class="">
+              <button
+                class="bg-blue-700 text-white text-lg py-2 px-4 rounded w-full my-4"
+              >
+                Download
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 4 end -->
+
+        <!-- Section 5 start -->
+        <section class="my-24">
+          <div class="mx-auto px-4 pb-16">
+            <div class="text-center">
+              <h6 class="text-base font-semibold">
+                We believe in building each other and hence
+              </h6>
+              <h4 class="text-3xl py-4 font-semibold">
+                Work with some amazing partners
+              </h4>
+              <p class="text-md md:text-center md:px-64 text-[#8492A6]">
+                Start working with
+                <span class="font-bold text-blue-600">Landrick</span> that can
+                provide everything you need to generate awareness, drive
+                traffic, connect.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap justify-between">
+            <div class="w-full md:w-[30%] p-6 space-y-6 border rounded-lg mb-2">
+              <img
+                src="Assets/amazon.svg"
+                alt=""
+                class="w-20 h-auto mx-auto my-auto"
+              />
+              <p class="text-md text-[#8492A6] text-center">
+                " It seems that only fragments of the original text remain in
+                the Lorem Ipsum texts used today. "
+              </p>
+              <span class="text-md text-blue-600 block text-center"
+                >- Thomas Israel</span
+              >
+            </div>
+            <div class="w-full md:w-[30%] p-6 space-y-6 border rounded-lg mb-2">
+              <img
+                src="Assets/google.svg"
+                alt=""
+                class="w-20 h-auto mx-auto my-auto"
+              />
+              <p class="text-md text-[#8492A6] text-center md:max-w-[90%]">
+                " The most well-known dummy text is the 'Lorem Ipsum', which is
+                said to have originated in the 16th century. "
+              </p>
+              <span class="text-md text-blue-600 block text-center"
+                >- Carl Oliver</span
+              >
+            </div>
+            <div class="w-full md:w-[30%] p-6 space-y-6 border rounded-lg">
+              <img
+                src="Assets/lenovo.svg"
+                alt=""
+                class="w-20 h-auto mx-auto my-auto"
+              />
+              <p class="text-md text-[#8492A6] text-center md:max-w-[90%]">
+                " One disadvantage of Lorum Ipsum is that in Latin certain
+                letters appear more frequently than others. "
+              </p>
+              <span class="text-md text-blue-600 block text-center"
+                >- Barbara McIntosh</span
+              >
+            </div>
+          </div>
+        </section>
+        <!-- Section 5 end -->
+
+        <!-- Section 6 start -->
+        <section class="flex flex-col lg:flex-row w-full">
+          <div
+            class="flex flex-col justify-center space-y-6 lg:w-1/2 mb-2 items-center md:items-start"
+          >
+            <h4 class="text-3xl font-semibold text-center">
+              Our Comfortable Rates
+            </h4>
+            <p
+              class="text-[#8492A6] md:w-xl md:max-w-lg text-center md:text-start"
+            >
+              Start working with
+              <span class="text-blue-600 font-bold">Landrick</span> that can
+              provide everything you need to generate awareness, drive traffic,
+              connect.
+            </p>
+            <button
+              class="flex items-center space-x-2 text-lg w-fit py-1 px-6 bg-blue-700 text-white border border-blue-700 rounded-md hover:bg-blue-600"
+            >
+              <p>Buy Now</p>
+              <span class="text-xs bg-red-500 px-2 rounded-full"> v4.4</span>
+            </button>
+          </div>
+
+          <div class="flex w-full lg:w-1/2 flex-col lg:flex-row">
+            <div class="md:max-w-xs w-full">
+              <div
+                class="bg-white border border-gray-300 rounded-lg p-8 md:mb-0 border-b-4 border-b-blue-600 space-y-10 w-full"
+              >
+                <h6 class="text-xl md:text-xl text-blue-700 mb-4 font-semibold">
+                  STARTER
+                </h6>
+                <h5
+                  class="text-4xl md:text-4xl font-semibold text-gray-800 mb-4"
+                >
+                  <sup>$</sup>39<sub>/mo</sub>
+                </h5>
+                <ul class="text-base md:text-lg text-gray-600 mb-8 space-y-2">
+                  <li class="flex items-center mb-2">
+                    <i class="fa-regular fa-circle-check text-blue-700 mr-2"></i
+                    >Full Access
+                  </li>
+                  <li class="flex items-center mb-2">
+                    <i class="fa-regular fa-circle-check text-blue-700 mr-2"></i
+                    >Source Files
+                  </li>
+                  <li class="flex items-center mb-2">
+                    <i class="fa-regular fa-circle-check text-blue-700 mr-2"></i
+                    >Free Appointments
+                  </li>
+                  <li class="flex items-center mb-2">
+                    <i class="fa-regular fa-circle-check text-blue-700 mr-2"></i
+                    >Enhanced Security
+                  </li>
+                </ul>
+                <button
+                  class="text-lg md:text-md w-fit px-4 py-1 bg-blue-700 text-white border border-blue-700 rounded-md hover:bg-blue-600"
+                >
+                  Get Started
+                </button>
+              </div>
+            </div>
+
+            <div class="md:max-w-xs w-full mt-1">
+              <div
+                class="bg-[#f8f9fa] border border-gray-300 rounded-lg p-8 space-y-10 md:h-[97%] border-b-4 border-b-gray-300"
+              >
+                <h6 class="text-xl md:text-xl text-blue-700 mb-4 font-semibold">
+                  PROFESSIONAL
+                </h6>
+                <h5
+                  class="text-4xl md:text-4xl font-semibold text-gray-800 mb-4"
+                >
+                  <sup>$</sup>59<sub>/mo</sub>
+                </h5>
+                <ul class="text-base md:text-lg text-gray-600 mb-8 space-y-2">
+                  <li class="flex items-center">
+                    <i class="fa-regular fa-circle-check text-blue-700 mr-2"></i
+                    >Full Access
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fa-regular fa-circle-check text-blue-700 mr-2"></i
+                    >Source Files
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fa-regular fa-circle-check text-blue-700 mr-2"></i
+                    >Free Appointments
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fa-regular fa-circle-check text-blue-700 mr-2"></i
+                    >Enhanced Security
+                  </li>
+                </ul>
+                <button
+                  class="text-lg md:text-md w-fit px-4 py-1 bg-blue-700 text-white border border-blue-700 rounded-md hover:bg-blue-600"
+                >
+                  Try it now
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 6 end -->
+      </div>
+      <div class="relative inline-block clip-polygon3 bg-[#f8f9fa] pt-40">
+        <!--  -->
+        <!-- Section 7 start-->
+        <section class="clip-polygon3">
+          <div class="mx-auto pl-2 md:max-w-[80%] pt-20">
+            <div class="flex flex-wrap justify-between">
+              <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                <div class="flex items-start mb-8 md:mb-8">
+                  <i
+                    class="fa-solid fa-question text-xl mr-3 mt-1 text-blue-700"
+                  ></i>
+                  <div class="">
+                    <div class="">
+                      <h5
+                        class="text-2xl md:text-xl md:mb-3 md:mt-1 mb-2 font-semibold"
+                      >
+                        How our
+                        <span class="text-blue-500"> Landrick</span> work ?
+                      </h5>
+                    </div>
+                    <div class="text-gray-600 md:text-md text-lg">
+                      Due to its widespread use as filler text for layouts,
+                      non-readability is of great importance: human perception
+                      is tuned to recognize certain patterns and repetitions in
+                      texts.
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <i
+                    class="fa-solid fa-question text-xl mr-3 mt-1 text-blue-700"
+                  ></i>
+                  <div class="">
+                    <div class="">
+                      <h5
+                        class="text-2xl md:text-xl md:mb-3 md:mt-1 mb-2 font-semibold"
+                      >
+                        How to make unlimited data entry ?
+                      </h5>
+                    </div>
+                    <div class="text-gray-600 md:text-md text-lg">
+                      Furthermore, it is advantageous when the dummy text is
+                      relatively realistic so that the layout impression of the
+                      final publication is not compromised.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 md:pr-12">
+                <div class="flex items-start md:mb-8 mb-8">
+                  <i
+                    class="fa-solid fa-question text-xl mr-3 mt-1 text-blue-700"
+                  ></i>
+                  <div class="">
+                    <div class="">
+                      <h5
+                        class="text-2xl md:text-xl md:mb-3 md:mt-1 mb-2 font-semibold"
+                      >
+                        What is the main process open account ?
+                      </h5>
+                    </div>
+                    <div class="text-gray-600 md:text-md text-lg">
+                      If the distribution of letters and 'words' is random, the
+                      reader will not be distracted from making a neutral
+                      judgement on the visual impact.
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <i
+                    class="fa-solid fa-question text-xl mr-3 mt-1 text-blue-700"
+                  ></i>
+                  <div class="">
+                    <div class="">
+                      <h5
+                        class="text-2xl md:text-xl md:mb-3 md:mt-1 mb-2 font-semibold"
+                      >
+                        Is <span class="text-blue-500"> Landrick</span> safer to
+                        use with my account ?
+                      </h5>
+                    </div>
+                    <div class="text-gray-600 md:text-md text-lg">
+                      The most well-known dummy text is the 'Lorem Ipsum', which
+                      is said to have originated in the 16th century. Lorem
+                      Ipsum is composed in a pseudo-Latin language which more or
+                      less corresponds to 'proper' Latin.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col items-center md:items-start mt-8 md:text-center"
+            >
+              <div class="w-full md:my-6 md:pb-12">
+                <h4 class="text-3xl md:text-3xl text-center pb-6 font-semibold">
+                  Have Question ? Get in touch!
+                </h4>
+                <p
+                  class="text-[#8492A6] text-xl md:text-md text-center md:text-center md:px-64 md:py-8"
+                >
+                  Start working with
+                  <span class="text-blue-600">Landrick</span> that can provide
+                  everything you need to generate awareness, drive traffic,
+                  connect.
+                </p>
+                <button
+                  class="block mx-auto mt-8 md:mt-4 px-4 py-2 mb-2 text-lg md:text-lg md:mb-2 md:py-1 md:px-4 bg-blue-700 text-white border border-blue-700 rounded-md hover:bg-blue-600"
+                >
+                  <i class="fa-solid fa-phone md:mr-2"></i>
+                  Contact us
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Section 7 end -->
+
+        <!-- Footer Start -->
+        <section
+          class="bg-[#202942] text-[#adb5bd] md:pt-32 clip-polygon1 px-2 w-full md:mb-0"
+        >
+          <div
+            class="max-w-7xl mx-auto md:px-2 py-10 md:py-20 border-b border-gray-600 md:max-w-[80%]"
+          >
+            <div
+              class="flex flex-wrap justify-between flex-col w-full md:space-y-0 space-y-8 md:flex-row"
+            >
+              <div class="flex-1 md:pr-8 max-w-3xl">
+                <img src="Assets/logo.png" alt="" class="mb-6 filter
+                brightness-0 invert"">
+                <p class="md:text-sm text-md mb-6">
+                  Start working with Landrick that can provide everything you
+                  need to generate awareness, drive traffic, connect.
+                </p>
+                <ul class="flex space-x-2">
+                  <li
+                    class="p-auto px-1 w-8 h-8 flex items-center justify-center rounded-md border border-[#183452]"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </li>
+                  <li
+                    class="p-auto px-1 w-8 h-8 flex items-center justify-center rounded-md border border-[#183452]"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </li>
+                  <li
+                    class="p-auto px-1 w-8 h-8 flex items-center justify-center rounded-md border border-[#183452]"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </li>
+                  <li
+                    class="p-auto px-1 w-8 h-8 flex items-center justify-center rounded-md border border-[#183452]"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex-1">
+                <h5 class="text-lg md:text-xl font-semibold mb-6 text-white">
+                  Company
+                </h5>
+                <ul class="space-y-2">
+                  <li>
+                    <i class="fas fa-chevron-right mr-2 text-xs"></i> About us
+                  </li>
+                  <li>
+                    <i class="fas fa-chevron-right mr-2 text-xs"></i> Services
+                  </li>
+                  <li>
+                    <i class="fas fa-chevron-right mr-2 text-xs"></i> Team
+                  </li>
+                  <li>
+                    <i class="fas fa-chevron-right mr-2 text-xs"></i> Pricing
+                  </li>
+                  <li>
+                    <i class="fas fa-chevron-right mr-2 text-xs"></i> Project
+                  </li>
+                  <li>
+                    <i class="fas fa-chevron-right mr-2 text-xs"></i> Careers
+                  </li>
+                  <li>
+                    <i class="fas fa-chevron-right mr-2 text-xs"></i> Blog
+                  </li>
+                  <li>
+                    <i class="fas fa-chevron-right mr-2 text-xs"></i> Login
+                  </li>
+                </ul>
+              </div>
+              <div class="flex-1 md:pr-8">
+                <h5 class="text-lg md:text-xl font-semibold mb-6 text-white">
+                  Usefull Links
+                </h5>
+                <ul class="space-y-2">
+                  <li>
+                    <i class="fas fa-chevron-right mr-2 text-xs"></i> Terms of
+                    Service
+                  </li>
+                  <li>
+                    <i class="fas fa-chevron-right mr-2 text-xs"></i> Privacy
+                    Policy
+                  </li>
+                  <li>
+                    <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                    Documentation
+                  </li>
+                  <li>
+                    <i class="fas fa-chevron-right mr-2 text-xs"></i> Changelog
+                  </li>
+                  <li>
+                    <i class="fas fa-chevron-right mr-2 text-xs"></i> Components
+                  </li>
+                </ul>
+              </div>
+              <div class="flex-1">
+                <h5 class="text-lg md:text-xl font-semibold mb-6 text-white">
+                  Newsletter
+                </h5>
+                <p class="text-sm md:text-base mb-6">
+                  Sign up and receive the latest tips via email.
+                </p>
+                <h6 class="text-sm md:text-base mb-3">
+                  Write your email <span class="text-red-500">*</span>
+                </h6>
+                <div class="relative mb-6">
+                  <i class="far fa-envelope absolute top-0 left-0 p-3"></i>
+                  <input
+                    type="email"
+                    class="pl-10 pr-3 py-2 w-full bg-gray-800 border border-gray-800 text-gray-100 rounded-md shadow-sm shadow-blue-900"
+                    placeholder="Your email"
+                  />
+                </div>
+                <button
+                  class="bg-initial border border-[#131377] w-full text-blue-600 py-2 px-6 rounded-md shadow-sm shadow-blue-900 hover:bg-blue-800 hover:text-white"
+                >
+                  Subscribe Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center pl-2 md:pl-36 h-20 md:max-w-[80%]">
+            <p>
+              © 2024 Landrick. Design with
+              <i class="fas fa-heart text-red-500"></i> by Themesbrand.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

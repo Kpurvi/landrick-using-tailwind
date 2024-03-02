@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+.font-nunito {
+  font-family: "Nunito", sans-serif;
+}
+
+
+.clip-polygon1 {
+  clip-path: polygon(0 17%, 100% 1%, 100% 100%, 0% 100%);
+}
+
+.clip-polygon2 {
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+}
+
+
+.clip-polygon3 {
+  clip-path: polygon(0 11%, 100% 0, 100% 100%, 0% 100%);
+}
